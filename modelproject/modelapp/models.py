@@ -6,13 +6,15 @@ class Article(models.Model):
     body = models.TextField()
     date = models.DateTimeField('date')
 
-    # admin 글 제못 표시하기 위한 함수
+    # admin 글 제목 표시하기 위한 함수
     def __str__(self):
         return self.title
-Class Article(models.Model):
+
+class Blog(models.Model):
     title = models.CharField(max_length=50)
     body = models.TextField()
     date = models.DateTimeField('date')
 
+    #Admin 글 제목 표시하기 위한 함수
     def __str__(self):
-        return self.title    
+        return self.title
